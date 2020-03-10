@@ -3,8 +3,8 @@
 const apiKey = 'e133193565792698f423478349cebc85';
 const prestonId = 5604473;
 let cityId = prestonId;
-const weatherAPI = `http://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=imperial&APPID=${apiKey}`;
-const forecastAPI = `http://api.openweathermap.org/data/2.5/forecast?id=${cityId}&units=imperial&APPID=${apiKey}`;
+const weatherAPI = `//api.openweathermap.org/data/2.5/weather?id=${cityId}&units=imperial&APPID=${apiKey}`;
+const forecastAPI = `//api.openweathermap.org/data/2.5/forecast?id=${cityId}&units=imperial&APPID=${apiKey}`;
 
 
 fetch(weatherAPI)
@@ -13,7 +13,7 @@ fetch(weatherAPI)
       console.log(jsObject);
 document.getElementById('current-temp').textContent = jsObject.main.temp;
 
-const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
+const imagesrc = '//openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
 const desc = jsObject.weather[0].description;  // note how we reference the weather array
 document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
 document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
@@ -29,7 +29,7 @@ fetch(forecastAPI)
   });
 
 
-  
+
 //update day and time in webpage
 function updateCurrentDate() {
     let options = {
