@@ -1,0 +1,82 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*----------- BODY --------------*/
+body {
+    font-size: 14px;
+    background-color: rgb(248, 242, 213);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}    
+
+/*----------- HEADER --------------*/
+main {
+    margin: 5%;
+}
+
+
+h1 { 
+    font-family: Verdana; 
+    color:#af4642;
+}
+
+
+/*----------- MAIN --------------*/
+
+h2 {
+    font-family: monospace;
+    color: #af4642;
+}
+
+p {
+    font-family: 'Lucida Sans';
+    color: #333;
+    font-size: 14px;
+    border: 1px;
+    background-color: rgb(240, 237, 82);
+    padding: 50px 30px 20px 50px;
+}
+
+img {
+    width: 100px; 
+    
+}
+
+
+ /*----------MAIN medium css-------------*/
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 40rem) {
+  
+   
+
+
+}
+    
+/*----------MAIN larg css-------------*/
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+
+}
+  
+/*----------- FOOTER --------------*/
+
+
+
+footer {
+    padding: 0.5rem 2%;
+    text-align: center;
+    font-size: 12px;
+    background-color: pink;
+}
+
+footer span {
+    color:#af4642;
+}
+
+
