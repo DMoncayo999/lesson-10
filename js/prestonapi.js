@@ -27,7 +27,7 @@ const updateWindChill = ( temp, windSpeed ) => {
     + (0.4275 * temp * Math.pow(windSpeed, 0.16));
     windchill = Math.round( windchill );
     if(temp <= 50 && windSpeed > 3) {
-        return windchill + "&deg;";
+        return windchill;
     } else {
         return "N/A";
     }
@@ -74,7 +74,7 @@ const updateWindChill = ( temp, windSpeed ) => {
                             theDayName.textContent = weekday[forecastDayNumber];
 
                             let theTemp = document.createElement("p");
-                            theTemp.textContent = forecastinfo.list[i].main.temp + "\xB0";
+                            theTemp.textContent = `${(forecastinfo.list[i].main.temp).toFixed(0)}°F`;
 
                             let iconcode = forecastinfo.list[i].weather[0].icon;
                             let iconPath = "https://openweathermap.org/img/w/" + iconcode + ".png";
