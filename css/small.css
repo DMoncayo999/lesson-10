@@ -95,21 +95,25 @@ picture.heroPhoto {
     margin: 0 2%;
     width: 96%;
 }
-main picture.heroPhoto img {width:100%;}
+main picture.heroPhoto img {
+    width:100%;
+    padding-bottom: 5%;
+}
 
 .weathersummary {
         position: absolute;
         top: 10px;
-        left: 15px;
+        left: 20px;
         background: rgba(256,256,0,0.7);
         padding: 0 0.5rem;
         border: 1px;
         box-shadow: 0 0 10px gray;
+        width: 75%;
 }
 
-.weathersummary h3 {color: green;}
-.weathersummary p { color: green; font-size:10px; font-weight: bold;}
-.weathersummary span {color: red;}
+.weathersummary h3 {color: green; text-align: center;}
+.weathersummary p { color: green; font-size:1rem; font-weight: bold; text-align: center;}
+.weathersummary span {color: red; font-size: 1rem;}
 
 #fiveDayForecast {display: none;}
 

@@ -25,8 +25,9 @@
 <!-- enhance-desktop -->
 <link href="css/large.css" rel="stylesheet">
 <script src="js/scripts.js" ></script>
+<script src="js/prestonapi.js" ></script>
 <script>
-    const callbacks = [ banner, updateWindChill ];
+    const callbacks = [ banner, populateWeather, populateForecast ];
 </script>
 
      
@@ -75,50 +76,19 @@
         </picture>
 
         <section class="weathersummary">
-            <h3>&#127774; Weather Summary</h3>
+            <h3>Weather Summary</h3>
             <hr/>
-            <p>Currently: <span>Sunny</span></p>
-            <p>Humidity:  <span>40%</span></p>
-            <p>High Tempeture: <span id="temp">34 &deg;</span></p>
-            <p>Wind Speed:<span id="speed"> 60 mph</span></p>
-            <p>Wind Chill:<span id="chill"></span></p>
+            <p>Currently: <span id="description"></span></p>
+            <p>Humidity:  <span id="humidity"></span>%</p>
+            <p>Tempeture: <span id="temp"></span>&deg;F</p>
+            <p>Wind Speed:<span id="speed"></span>mph</p>
+            <p>Wind Chill:<span id="chill"></span>F</p>
         </section>
     </div>   
 </section>
     
 <section id="fiveDayForecast">
-    <h2>Five Day Forecast</h2>
-    <div class="forecast">
-	<div>
-		<h5>Monday</h5>
-		<img src="images/sun-256.png" alt="sunny">
-		<p>75 &#8457;</p>
-    </div>
-    
-	<div>
-		<h5>Tuesday</h5>
-		<img src="images/rain-cloud-256.png" alt="rainy">
-		<p>40  &#8457;</p>
-    </div>
-    
-	<div>
-		 <h5>Wednesday</h5>
-		<img src="images/cloudy-256.png" alt="cloudy">
-		<p>45 &#8457;</p>
-    </div>
-    
-	<div>
-		<h5>Thursday</h5>
-		<img src="images/snow-cloud-256.png" alt="snow day">
-		<p> 30 &#8457;</p>
-    </div>
-
-	<div>
-		<h5>Friday</h5>
-		<img src="images/cloud-256.png" alt="partial cloudy">
-		<p>50 &#8457;</p>
-    </div>
-    </div>
+  
 </section>
 
 <section class="news">
@@ -150,7 +120,6 @@
     </div> 
     </div>
 </section>
-
 </main>
     
 <!-- FOOTER HERE --> 

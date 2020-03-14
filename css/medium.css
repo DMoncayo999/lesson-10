@@ -27,35 +27,28 @@
 .weathersummary {
     position: absolute;
     top: 20px;
-    left: 30px;
+    left: 50px;
+    width: 45%;
     
 }
 
-#fiveDayForecast {
-    display: block;
-    margin: auto; 
-    width: 80%;
-}
-
-.forecast {
-    display: grid;
+section#fiveDayForecast {
+    display : grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    
- }
-.forecast div {
+    border: 1px solid #aaa;
+       
+}
+#fiveDayForecast div {
     text-align: center;
     border: 1px solid #aaa;
 }
 
-.forecast div h5 {
+#fiveDayForecast div h5 {
     background-color:#af4642;
     margin: 0;
-    padding: 1rem 0;
     color: white;
-
-}
-.forecast div img {
-    width: 40px;
+    max-width: 100%;
+    padding: 25px;
 }
 
  .news {
